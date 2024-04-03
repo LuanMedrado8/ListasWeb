@@ -1,0 +1,24 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estado inicial */
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid blue; /* Bordas com estilo sólido e cor azul */
+    color: white; /* Cor da fonte branca */
+    background-color: black; /* Fundo preto */
+}
+
+/* Estado hover */
+a:hover {
+    border-style: dotted; /* Bordas com estilo pontilhado */
+    border-color: black; /* Cor preta */
+    color: black; /* Cor da fonte preta */
+    background-color: white; /* Fundo branco */}
+

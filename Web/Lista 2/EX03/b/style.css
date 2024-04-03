@@ -1,0 +1,31 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#meuLink:visited {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    text-decoration: underline; /* Adiciona uma linha acima do texto */
+    text-decoration-color: #000; /* Cor da linha */
+}
+
+#meuLink:link {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    text-decoration: overline; /* Adiciona uma linha acima do texto */
+    text-decoration-color: #000; /* Cor da linha */
+}
+
+#meuLink:active {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    text-decoration: line-through; /* Adiciona uma linha acima do texto */
+    text-decoration-color: #000; /* Cor da linha */
+}
+

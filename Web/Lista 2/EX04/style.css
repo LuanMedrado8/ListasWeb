@@ -1,0 +1,61 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 10;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+
+#container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    border: solid 2px rgb(6, 167, 221);
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+    
+}
+
+#container a {
+    margin: 0 auto;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+#g {
+    color: rgb(75, 78, 248);
+}
+
+#n {
+    color: red;
+}
+
+#e {
+    color: green; 
+}
+
+#en {
+    color: orange;
+}
+
+#gp {
+    color: orangered;
+}
+
+#container a:hover {
+    text-decoration: overline;
+}
+
+
+

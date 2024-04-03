@@ -1,0 +1,35 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+/* Estado inicial */
+#meuLink:link {
+    color: rgb(255, 0, 0); /* Cor vermelha */
+    text-decoration: none;
+}
+
+/* Estado hover */
+#meuLink:hover {
+    text-decoration: underline; /* Sublinhado */
+}
+
+/* Estado de clique */
+#meuLink:active {
+    color: yellow; /* Cor amarelo */
+}
+
+/* Estado visitado */
+#meuLink:visited {
+    color: orange; /* Cor laranja */
+    font-style: italic; /* Itálico */
+    font-weight: bold; /* Negrito */
+    text-decoration: none; /* Sem sublinhado */
+}

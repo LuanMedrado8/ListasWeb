@@ -1,0 +1,26 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 10;
+    box-sizing: border-box;
+}
+/* Regra para a lista não numerada */
+ul {
+    list-style-image: url('seta_vermelha.png'); /* Utiliza uma imagem como marcador de lista */
+    color: red; /* Cor do texto vermelho */
+    font-family: Verdana, sans-serif; /* Fonte Verdana */
+    font-size: 12px; /* Tamanho de fonte 12px */
+}
+
+/* Adiciona uma linha pontilhada abaixo de cada item */
+ul li {
+    border-bottom: 1px dashed red; /* Linha pontilhada com cor vermelha */
+    width: 400px;
+}
+
+/* Efeito hover */
+ul li:hover {
+    color: green; /* Cor do texto verde */
+    border-bottom-color: green; /* Borda inferior com cor verde */
+}
+

@@ -1,0 +1,18 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estado inicial */
+a {
+    color: orange; /* Cor laranja */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+/* Estado hover */
+a:hover {
+    color: green; /* Cor verde */
+    text-decoration: underline; /* Sublinhado */
+}
