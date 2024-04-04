@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Receber Números</title>
+<script>
+    function calcular() {
+        // Obter os valores dos campos de entrada
+        var num1 = parseFloat(document.getElementById("numero1").value);
+        var num2 = parseFloat(document.getElementById("numero2").value);
+        var num3 = parseFloat(document.getElementById("numero3").value);
+
+        // Verificar se os valores são números válidos
+        if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
+            alert("Por favor, insira números válidos");
+            return;
+        }
+
+        // Calcular a soma dos números
+        var soma = num1 + num2 + num3;
+
+        // Exibir o resultado
+        alert("A soma dos números é: " + soma);
+    }
+</script>
+</head>
+<body>
+
+<h2>Receber Números</h2>
+<form>
+    <label for="numero1">Número 1:</label><br>
+    <input type="text" id="numero1" name="numero1"><br><br>
+
+    <label for="numero2">Número 2:</label><br>
+    <input type="text" id="numero2" name="numero2"><br><br>
+
+    <label for="numero3">Número 3:</label><br>
+    <input type="text" id="numero3" name="numero3"><br><br>
+
+    <input type="button" value="Calcular Soma" onclick="calcular()">
+</form>
+
+</body>
+</html>

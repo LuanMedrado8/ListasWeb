@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadastro de Usuário</title>
+<script>
+    function validarFormulario() {
+        var login = document.getElementById("login").value;
+        var senha = document.getElementById("senha").value;
+        var confirmarSenha = document.getElementById("confirmarSenha").value;
+
+        // Verifica se algum campo está vazio
+        if (login.trim() === "" || senha.trim() === "" || confirmarSenha.trim() === "") {
+            alert("Todos os campos devem ser preenchidos");
+            return false;
+        }
+
+        // Verifica se as senhas são iguais
+        if (senha !== confirmarSenha) {
+            alert("As senhas não coincidem");
+            return false;
+        }
+
+        // Verifica se a senha possui entre 6 e 10 caracteres
+        if (senha.length < 6 || senha.length > 10) {
+            alert("A senha deve ter entre 6 e 10 caracteres");
+            return false;
+        }
+
+        // Se todas as validações passarem, o formulário pode ser submetido
+        return true;
+    }
+</script>
+</head>
+<body>
+
+<h2>Cadastro de Usuário</h2>
+<form onsubmit="return validarFormulario()">
+    <label for="login">Login:</label><br>
+    <input type="text" id="login" name="login"><br>
+
+    <label for="senha">Senha:</label><br>
+    <input type="password" id="senha" name="senha"><br>
+
+    <label for="confirmarSenha">Confirmar Senha:</label><br>
+    <input type="password" id="confirmarSenha" name="confirmarSenha"><br>
+
+    <input type="submit" value="Cadastrar">
+</form>
+
+</body>
+</html>

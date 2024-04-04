@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inverter Nomes</title>
+<script>
+    function inverterNomes() {
+        var nomes = [];
+        for (var i = 1; i <= 5; i++) {
+            var nome = document.getElementById("nome" + i).value;
+            nomes.push(nome);
+        }
+        nomes.reverse();
+        for (var i = 1; i <= 5; i++) {
+            document.getElementById("nome" + i).value = nomes[i - 1];
+        }
+    }
+</script>
+</head>
+<body>
+
+<h2>Inverter Nomes</h2>
+<form>
+    <label for="nome1">Nome 1:</label><br>
+    <input type="text" id="nome1" name="nome1"><br>
+
+    <label for="nome2">Nome 2:</label><br>
+    <input type="text" id="nome2" name="nome2"><br>
+
+    <label for="nome3">Nome 3:</label><br>
+    <input type="text" id="nome3" name="nome3"><br>
+
+    <label for="nome4">Nome 4:</label><br>
+    <input type="text" id="nome4" name="nome4"><br>
+
+    <label for="nome5">Nome 5:</label><br>
+    <input type="text" id="nome5" name="nome5"><br>
+
+    <button type="button" onclick="inverterNomes()">Inverter</button>
+</form>
+
+</body>
+</html>
